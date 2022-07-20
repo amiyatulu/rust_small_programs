@@ -77,9 +77,9 @@ fn calculate_new_mean(data: &Vec<i64>, mean: Option<i64>, sd: Option<i64>) -> Op
 fn main() {
     let data = vec![-10, 1, 1, 1, 5, 1, 1, 7];
     let data_mean = mean(&data);
-    println!("Mean is {:?}", data_mean); // Mean is Some(4.7777777)
+    println!("Mean is {:?}", data_mean); 
     let data_std_deviation = std_deviation(&data);
-    println!("Standard deviation is {:?}", data_std_deviation); // Standard deviation is Some(3.2584174)
+    println!("Standard deviation is {:?}", data_std_deviation); 
     
     // let data_integer = vec![3000, 1000, 6000, 1000, 5000, 8000, 1000, 8000, 10000];
     let data_initial = vec![-10, 1, 1, 1, 5, 1, 1, 7];
@@ -89,7 +89,7 @@ fn main() {
         .collect::<Vec<i64>>();
     println!("data integer {:?}", data_integer);
     let data_mean_integer = mean_integer(&data_integer);
-    println!("Mean integer is {:?}", data_mean_integer); // Mean integer is Some(4777)
+    println!("Mean integer is {:?}", data_mean_integer); 
 
    
 
@@ -97,7 +97,7 @@ fn main() {
     println!(
         "Standard deviation integer is {:?}",
         data_std_deviation_integer
-    ); // Standard deviation integer is Some(3258)
+    ); 
 
     let new_mean_integer = calculate_new_mean(&data_integer, data_mean_integer, data_std_deviation_integer);
     println!("new mean {:?}", new_mean_integer)
