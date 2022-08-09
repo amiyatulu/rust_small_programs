@@ -2,7 +2,7 @@ use yew::prelude::*;
 
 #[derive(Properties, PartialEq)]
 pub struct Props {
-    pub label: String
+    pub label: String,
 }
 
 #[function_component(CustomButton)]
